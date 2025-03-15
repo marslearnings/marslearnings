@@ -1,5 +1,5 @@
-site_name: 'Mars Learnings'
-site_url: https://sitename.example
+site_name: ""
+site_url: https://marslearnings.github.io/marslearnings/
 theme:
   name: material
   font:
@@ -50,6 +50,6 @@ markdown_extensions:
 extra:
   social:
     - icon: simple/youtube
-      link: https://sitename.example
+      link: https://www.youtube.com/@datascienceanywhere
 
 copyright: copyright &copy; 2025 MARS Learnings
