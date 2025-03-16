@@ -9,6 +9,11 @@ theme:
   favicon: assets/favicon.ico
   features:
     - navigation.footer
+    - navigation.tabs
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs.sticky
+    - navigation.sections
 
   palette:
     # Dark Mode
@@ -46,6 +51,25 @@ markdown_extensions:
   - admonition
   - pymdownx.details
 
+plugins:
+  - search
+  - blog:
+      archive_date_format: MMMM yyyy
+      categories_allowed:
+        - Python
+        - News
+  # - tags:
+  #   - tags_file: blog/tags.md
+
+nav:
+  - Home:
+    - index.md
+    - code-examples.md
+    - admonitions.md
+    - diagrams-examples.md
+  - Blog:
+    - blog/index.md
+    # - Tags: blog/tags.md
 
 extra:
   social:

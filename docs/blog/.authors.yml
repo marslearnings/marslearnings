@@ -1,0 +1,9 @@
+authors:
+  mars:
+    name: Team
+    description: Creator
+    avatar: https://simpleicons.org/icons/materialformkdocs.svg
+  squidfunk:
+    name: Sriram Manas
+    description: Creator
+    avatar: https://github.com/squidfunk.png
