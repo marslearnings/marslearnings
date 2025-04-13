@@ -15,7 +15,7 @@ tags:
 ---
 
 # Introduction to Regular Expressions
-- Download PDF: [Introduction to Regular Expression](../static/Introduction_to_Regular_Expressions.pdf){:download}
+- Download PDF: [Introduction to Regular Expression](https://github.com/marslearnings/Python_Regular_Expressions/blob/main/pdf/Introduction_to_Regular_Expressions.pdf)
 - Video Explanation:  [YOUTUBE](https://youtu.be/75G4GajQdgQ)
 
 Regular expressions (regex) are patterns used to match character combinations in strings. These patterns can be simple characters or a combination of simple and special characters.

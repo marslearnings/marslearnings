@@ -1,11 +1,11 @@
-site_name: ""
+site_name: "MARS"
 site_url: https://marslearnings.github.io/marslearnings/
 theme:
   name: material
   font:
     text: Roboto
     code: Red Hat Mono
-  logo: assets/white_logo_crop.png
+  logo: assets/mars_logo_new.png
   favicon: assets/favicon.ico
   features:
     - navigation.footer
