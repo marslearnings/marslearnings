@@ -1,0 +1,1642 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://marslearnings.github.io/marslearnings/blog/category/python/">
+      
+      
+        <link rel="prev" href="../../">
+      
+      
+        <link rel="next" href="../../archive/2025/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>Python - MARS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Red Hat Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="MARS" class="md-header__button md-logo" aria-label="MARS" data-md-component="logo">
+      
+  <img src="../../../assets/mars_logo_new.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MARS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="cyan"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MARS" class="md-nav__button md-logo" aria-label="MARS" data-md-component="logo">
+      
+  <img src="../../../assets/mars_logo_new.png" alt="logo">
+
+    </a>
+    MARS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome to MARS Learnings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code-examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admonitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Admonitions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../diagrams-examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diagram Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    April 2025
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Categories
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    
+      
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="python">Python</h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-04-13 00:00:00+00:00">April 13, 2025</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Python</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              20 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="introduction-to-regular-expressions"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/">Introduction to Regular Expressions</a></h2>
+<ul>
+<li>Download PDF: <a href="https://github.com/marslearnings/Python_Regular_Expressions/blob/main/pdf/Introduction_to_Regular_Expressions.pdf">Introduction to Regular Expression</a></li>
+<li>Video Explanation:  <a href="https://youtu.be/75G4GajQdgQ">YOUTUBE</a></li>
+</ul>
+<p>Regular expressions (regex) are patterns used to match character combinations in strings. These patterns can be simple characters or a combination of simple and special characters.</p>
+<p>Examples:</p>
+<ul>
+<li><code>/abc/</code> - A simple pattern matching the literal string "abc"</li>
+<li><code>/ab*c/</code> - A pattern using special characters to match variations</li>
+</ul>
+<h3 id="the-regular-expression-syntax"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#the-regular-expression-syntax">The Regular Expression Syntax</a></h3>
+<p>Regular expressions follow a specific syntax:</p>
+<ul>
+<li>In standard notation: <code>/pattern/</code></li>
+<li>In Python: <code>r"pattern"</code></li>
+</ul>
+<p>When a pattern is applied to text, it returns the range where the pattern exists in the string.</p>
+<h3 id="literals-or-simple-characters"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#literals-or-simple-characters">Literals or Simple Characters</a></h3>
+<p>Simple literals match the exact characters in the pattern.</p>
+<p>Example:</p>
+<ul>
+<li><code>/cat/</code> matches the string "cat" within text</li>
+</ul>
+<h3 id="meta-characters"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#meta-characters">Meta Characters</a></h3>
+<p>Meta characters give regular expressions their power, allowing for more sophisticated matching.</p>
+<h4 id="special-characters"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#special-characters">Special Characters</a></h4>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>Description</th>
+<th>Example</th>
+<th>Match</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>|</td>
+<td>Either or</td>
+<td><code>cat\|hello</code></td>
+<td>Matches "cat" or "hello"</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Any character (except newline)</td>
+<td><code>he..lo</code></td>
+<td>Matches characters between "e" and "l"</td>
+</tr>
+<tr>
+<td>{ }</td>
+<td>Exactly specified number of occurrences</td>
+<td><code>he.{2}o</code></td>
+<td>Matches "hello" where there are exactly 2 characters between "e" and "o"</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Zero or more occurrences</td>
+<td><code>he.*o</code></td>
+<td>Matches "hello", "hero", "helico", etc.</td>
+</tr>
+<tr>
+<td>+</td>
+<td>One or more occurrences</td>
+<td><code>he.+o</code></td>
+<td>Same as above but requires at least one character</td>
+</tr>
+<tr>
+<td>?</td>
+<td>Zero or one occurrence</td>
+<td><code>he.?o</code></td>
+<td>Matches "heo" or "hero"</td>
+</tr>
+<tr>
+<td>( )</td>
+<td>Capture and group patterns</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>A set of characters</td>
+<td><code>[a-z]</code></td>
+<td>Matches any lowercase letter</td>
+</tr>
+<tr>
+<td>^</td>
+<td>Starts with</td>
+<td><code>^hello</code></td>
+<td>Matches strings starting with "hello"</td>
+</tr>
+<tr>
+<td>$</td>
+<td>Ends with</td>
+<td><code>world$</code></td>
+<td>Matches strings ending with "world"</td>
+</tr>
+<tr>
+<td>\</td>
+<td>Signals a special sequence</td>
+<td><code>\d</code></td>
+<td>Matches any digit</td>
+</tr>
+</tbody>
+</table>
+<h4 id="character-classes"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#character-classes">Character Classes</a></h4>
+<p>Character classes allow you to define a set of characters where any single character from that set will match.</p>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[cs]</code></td>
+<td>Matches either "c" or "s" (e.g., <code>/licen[cs]e/</code> matches "licence" or "license")</td>
+</tr>
+<tr>
+<td><code>[0-9]</code></td>
+<td>Matches any digit from 0 to 9</td>
+</tr>
+<tr>
+<td><code>[a-z]</code></td>
+<td>Matches any lowercase letter</td>
+</tr>
+<tr>
+<td><code>[A-Z]</code></td>
+<td>Matches any uppercase letter</td>
+</tr>
+<tr>
+<td><code>[0-9a-zA-Z]</code></td>
+<td>Matches any alphanumeric character</td>
+</tr>
+<tr>
+<td><code>[^0-9]</code></td>
+<td>Matches any character that is NOT a digit</td>
+</tr>
+<tr>
+<td><code>[^a-z]</code></td>
+<td>Matches any character that is NOT a lowercase letter</td>
+</tr>
+</tbody>
+</table>
+<h4 id="quantifiers"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#quantifiers">Quantifiers</a></h4>
+<p>Quantifiers define how many times a character, metacharacter, or character set can be repeated.</p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Name</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>?</td>
+<td>Question Mark</td>
+<td>0 or 1 repetition</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Asterisk</td>
+<td>Zero or more times</td>
+</tr>
+<tr>
+<td>+</td>
+<td>Plus sign</td>
+<td>One or more times</td>
+</tr>
+<tr>
+<td>{n,m}</td>
+<td>Curly braces</td>
+<td>Between n and m times</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><code>/hello*/</code> matches "hell", "hello", "helloo", "hellooo", etc.</li>
+<li><code>/hello+/</code> matches "hello", "helloo", "hellooo", etc. (but not "hell")</li>
+<li><code>/hello?/</code> matches only "hell" or "hello"</li>
+<li><code>/hello{2,5}/</code> matches "helloo", "hellooo", "helloooo", "hellooooo"</li>
+</ul>
+<h3 id="special-sequence-characters"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#special-sequence-characters">Special Sequence Characters</a></h3>
+<h4 id="pre-defined-characters"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#pre-defined-characters">Pre-defined Characters</a></h4>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>Description</th>
+<th>Equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\w</td>
+<td>Word characters (letters, digits, underscore)</td>
+<td><code>[a-zA-Z0-9_]</code></td>
+</tr>
+<tr>
+<td>\W</td>
+<td>NOT word characters</td>
+<td><code>[^a-zA-Z0-9_]</code></td>
+</tr>
+<tr>
+<td>\d</td>
+<td>Digits</td>
+<td><code>[0-9]</code></td>
+</tr>
+<tr>
+<td>\D</td>
+<td>NOT digits</td>
+<td><code>[^0-9]</code></td>
+</tr>
+<tr>
+<td>\s</td>
+<td>Whitespace characters</td>
+<td><code>[ \t\n\r\f\v]</code></td>
+</tr>
+<tr>
+<td>\S</td>
+<td>NOT whitespace characters</td>
+<td><code>[^ \t\n\r\f\v]</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="boundary-characters"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#boundary-characters">Boundary Characters</a></h3>
+<p>Boundary matchers identify specific positions within the input text.</p>
+<table>
+<thead>
+<tr>
+<th>Matcher</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>^</td>
+<td>Matches at the beginning of a line</td>
+</tr>
+<tr>
+<td>$</td>
+<td>Matches at the end of a line</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>Matches a word boundary (beginning or end of word)</td>
+</tr>
+<tr>
+<td>\B</td>
+<td>Matches anything that is NOT a word boundary</td>
+</tr>
+<tr>
+<td>\A</td>
+<td>Matches the beginning of the input</td>
+</tr>
+<tr>
+<td>\Z</td>
+<td>Matches the end of the input</td>
+</tr>
+</tbody>
+</table>
+<h3 id="practice-exercises"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#practice-exercises">Practice Exercises</a></h3>
+<h4 id="excerise-1-basic-pattern-matching"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#excerise-1-basic-pattern-matching">Excerise 1: Basic Pattern Matching</a></h4>
+<p>Consider this example string:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>The quick brown fox jumps over the lazy dog. This is outside (this is inside)
+</span></code></pre></div></p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Match the string "fox" and provide its range</td>
+<td>16-19</td>
+</tr>
+<tr>
+<td>How many times does "is" appear in the string?</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Match the pattern "(this is inside)" and provide its range</td>
+<td>61-77</td>
+</tr>
+</tbody>
+</table>
+<h4 id="excerise-2-using-or-operator-pipe"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#excerise-2-using-or-operator-pipe">Excerise 2: Using OR Operator (pipe)</a></h4>
+<p>For the string:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>The sun rises in the east and sets in the west. Birds sing in the morning or evening.
+</span></code></pre></div></p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Match either "sun" or "moon"</td>
+<td><code>sun|moon</code></td>
+</tr>
+<tr>
+<td>Match either "east" or "west"</td>
+<td><code>east|west</code></td>
+</tr>
+<tr>
+<td>Match either "morning" or "evening"</td>
+<td><code>morning|evening</code></td>
+</tr>
+<tr>
+<td>Match either "rises", "sets", or "sing"</td>
+<td><code>rises|sets|sing</code></td>
+</tr>
+<tr>
+<td>Match either "The" or "Birds"</td>
+<td><code>The|Birds</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="excerise-3-character-set-dot"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#excerise-3-character-set-dot">Excerise 3: Character Set, dot(.)</a></h4>
+<p>For this data:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>Contact Information:
+</span><span id="__span-64-2"><a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a>John Doe - john.doe@example.com - (555) 123-4567
+</span><span id="__span-64-3"><a id="__codelineno-64-3" name="__codelineno-64-3" href="#__codelineno-64-3"></a>Mary Smith - mary_smith@email.net - 555.987.6543
+</span><span id="__span-64-4"><a id="__codelineno-64-4" name="__codelineno-64-4" href="#__codelineno-64-4"></a>Tom Johnson - tom-johnson@company.org - (555)246-8910
+</span><span id="__span-64-5"><a id="__codelineno-64-5" name="__codelineno-64-5" href="#__codelineno-64-5"></a>Sarah Brown - sarah@brown.co.uk - +1-555-369-7412
+</span><span id="__span-64-6"><a id="__codelineno-64-6" name="__codelineno-64-6" href="#__codelineno-64-6"></a>Mike Wilson - mike.wilson@subdomain.example.edu - 555 741 0258
+</span></code></pre></div></p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Match any single vowel</td>
+<td><code>[aeiou]</code></td>
+</tr>
+<tr>
+<td>Match either "John" or "Tom"</td>
+<td><code>John|Tom</code></td>
+</tr>
+<tr>
+<td>Match any character that is NOT a digit</td>
+<td><code>[^0-9]</code></td>
+</tr>
+<tr>
+<td>Match either "com" or "net" in email domains</td>
+<td><code>com|net</code></td>
+</tr>
+<tr>
+<td>Match any single digit in phone numbers</td>
+<td><code>[0-9]</code></td>
+</tr>
+<tr>
+<td>Match any character between 'T' and 'm' in "Tom"</td>
+<td><code>T.m</code></td>
+</tr>
+<tr>
+<td>Match any single uppercase letter</td>
+<td><code>[A-Z]</code></td>
+</tr>
+<tr>
+<td>Match any character that is not a letter or number</td>
+<td><code>[^0-9a-zA-Z]</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="excerise-4-quantiers"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#excerise-4-quantiers">Excerise 4: Quantiers</a></h4>
+<p>Consider the below example string and Use the "The Curious Case of the Missing Code" text to answer the following questions. </p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a>The Curious Case of the Missing Code
+</span><span id="__span-65-2"><a id="__codelineno-65-2" name="__codelineno-65-2" href="#__codelineno-65-2"></a>
+</span><span id="__span-65-3"><a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a>John_Smith123 was panicking. It was 9:30 AM on April 15, 2025, and he had just realized that the crucial code files for Project-X2021 were missing from his laptop. Yesterday at 17:45, everything had been fine when he left the office at 42 Maple Street, Suite #301.
+</span><span id="__span-65-4"><a id="__codelineno-65-4" name="__codelineno-65-4" href="#__codelineno-65-4"></a>
+</span><span id="__span-65-5"><a id="__codelineno-65-5" name="__codelineno-65-5" href="#__codelineno-65-5"></a>He quickly sent an email to his boss (anna.director@techcorp.com) and his team members (dev.team@techcorp.com):
+</span><span id="__span-65-6"><a id="__codelineno-65-6" name="__codelineno-65-6" href="#__codelineno-65-6"></a>
+</span><span id="__span-65-7"><a id="__codelineno-65-7" name="__codelineno-65-7" href="#__codelineno-65-7"></a>Subject: URGENT - Missing Project Files
+</span><span id="__span-65-8"><a id="__codelineno-65-8" name="__codelineno-65-8" href="#__codelineno-65-8"></a>Body: Team, I can&#39;t locate the following files:
+</span><span id="__span-65-9"><a id="__codelineno-65-9" name="__codelineno-65-9" href="#__codelineno-65-9"></a>- main_v3.2.py
+</span><span id="__span-65-10"><a id="__codelineno-65-10" name="__codelineno-65-10" href="#__codelineno-65-10"></a>- config_prod.json
+</span><span id="__span-65-11"><a id="__codelineno-65-11" name="__codelineno-65-11" href="#__codelineno-65-11"></a>- api_keys.txt (IP: 192.168.1.100)
+</span><span id="__span-65-12"><a id="__codelineno-65-12" name="__codelineno-65-12" href="#__codelineno-65-12"></a>
+</span><span id="__span-65-13"><a id="__codelineno-65-13" name="__codelineno-65-13" href="#__codelineno-65-13"></a>I&#39;ve checked my backups from 2023-12-01 through 2025-03-15 but found nothing. Has anyone committed changes to the repository at http://git.techcorp.com/projects/x2021? My phone number is (555) 123-4567 if you need to reach me urgently. The project deadline is in 72 hours!
+</span><span id="__span-65-14"><a id="__codelineno-65-14" name="__codelineno-65-14" href="#__codelineno-65-14"></a>
+</span><span id="__span-65-15"><a id="__codelineno-65-15" name="__codelineno-65-15" href="#__codelineno-65-15"></a>Lisa responded first at 9:42 AM: &quot;I saved a copy at C:\Projects\Backup\X2021-backup.zip. The password is XB21-9$f5. You can also check with Mark who was working late yesterday.&quot;
+</span><span id="__span-65-16"><a id="__codelineno-65-16" name="__codelineno-65-16" href="#__codelineno-65-16"></a>
+</span><span id="__span-65-17"><a id="__codelineno-65-17" name="__codelineno-65-17" href="#__codelineno-65-17"></a>John sighed with relief. Crisis averted! Now he needed to update the project documentation with proper file paths like /usr/local/bin/project-x/ for Linux users and C:\Program Files\Project-X\ for Windows users.
+</span><span id="__span-65-18"><a id="__codelineno-65-18" name="__codelineno-65-18" href="#__codelineno-65-18"></a>
+</span><span id="__span-65-19"><a id="__codelineno-65-19" name="__codelineno-65-19" href="#__codelineno-65-19"></a>He made a note to call Lisa later at +1-555-987-6543 to thank her properly.
+</span></code></pre></div>
+Create regular expressions that match exactly what's requested (nothing more, nothing less).</p>
+<blockquote>
+<p>Basic Character Sets</p>
+</blockquote>
+<ol>
+<li>Create a pattern that matches all instances of dates in the format YYYY-MM-DD.</li>
+<li>Write a regex that finds all alphanumeric identifiers that contain both letters and numbers (like "John_Smith123" or "Project-X2021").</li>
+<li>Match all times in the HH:MM AM/PM format.</li>
+</ol>
+<blockquote>
+<p>Predefined Character Classes</p>
+</blockquote>
+<ol>
+<li>Create a pattern using \d and \w to extract all phone numbers in the format (555) 123-4567 or +1-555-987-6543.</li>
+<li>Write a regex using \s and \S to find all file paths (both Windows and Linux style).</li>
+<li>Develop a pattern using \w, \d, and \s to match all file names with version numbers (like "main_v3.2.py").</li>
+</ol>
+<blockquote>
+<p>Metacharacters and Alternation</p>
+</blockquote>
+<ol>
+<li>Use the pipe operator (|) to match either email addresses or web URLs.</li>
+<li>Create a pattern with the dot (.) metacharacter to find all text within parentheses.</li>
+<li>Write a regex that matches IP addresses like 192.168.1.100.</li>
+</ol>
+<blockquote>
+<p>Combined Challenge</p>
+</blockquote>
+<ol>
+<li>Create a comprehensive pattern that extracts all forms of contact information (emails and phone numbers) from the text.</li>
+</ol>
+<p><strong>Solution</strong></p>
+<ol>
+<li>
+<p>Pattern to match dates in YYYY-MM-DD format:
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>\d{4}-\d{2}-\d{2}
+</span></code></pre></div>
+   Matches: "2023-12-01", "2025-03-15"</p>
+</li>
+<li>
+<p>Pattern for alphanumeric identifiers with both letters and numbers:
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>[A-Za-z][A-Za-z0-9_]*\d+[A-Za-z0-9_]*
+</span></code></pre></div>
+   Matches: "John_Smith123", "Project-X2021", "XB21-9$f5" (part of it)</p>
+</li>
+<li>
+<p>Pattern for times in HH:MM AM/PM format:
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>\d{1,2}:\d{2}\sAM|\d{1,2}:\d{2}\sPM
+</span></code></pre></div>
+   Matches: "9:30 AM", "9:42 AM"</p>
+</li>
+<li>
+<p>Pattern for phone numbers using \d and \w:
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-69-1"><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a>\(\d{3}\)\s\d{3}-\d{4}|\+\d-\d{3}-\d{3}-\d{4}
+</span></code></pre></div>
+   Matches: "(555) 123-4567", "+1-555-987-6543"</p>
+</li>
+<li>
+<p>Pattern for file paths using \s and \S:
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-70-1"><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a>[A-Z]:\\[^\s]+|/\S+/
+</span></code></pre></div>
+   Matches: "C:\Projects\Backup\X2021-backup.zip", "C:\Program Files\Project-X\", "/usr/local/bin/project-x/"</p>
+</li>
+<li>
+<p>Pattern for filenames with version numbers using \w, \d, and \s:
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-71-1"><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a>\w+_v\d+\.\d+\.\w+
+</span></code></pre></div>
+   Matches: "main_v3.2.py"</p>
+</li>
+<li>
+<p>Pattern for email addresses or web URLs using pipe operator:**
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-72-1"><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a>[a-zA-Z0-9_.]+@[a-zA-Z0-9_.]+\.[a-z]+|http://[^\s]+
+</span></code></pre></div>
+   Matches: "anna.director@techcorp.com", "dev.team@techcorp.com", "http://git.techcorp.com/projects/x2021"</p>
+</li>
+<li>
+<p>Pattern with dot metacharacter to find text in parentheses:
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-73-1"><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a>\(.*?\)
+</span></code></pre></div>
+   Matches: "(555) 123-4567", "(IP: 192.168.1.100)"</p>
+</li>
+<li>
+<p>Pattern for IP addresses:
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-74-1"><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}
+</span></code></pre></div>
+   Matches: "192.168.1.100"</p>
+</li>
+<li>
+<p>Comprehensive pattern for contact information:
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-75-1"><a id="__codelineno-75-1" name="__codelineno-75-1" href="#__codelineno-75-1"></a>[a-zA-Z0-9_.]+@[a-zA-Z0-9_.]+\.[a-z]+|\(\d{3}\)\s\d{3}-\d{4}|\+\d-\d{3}-\d{3}-\d{4}
+</span></code></pre></div>
+    Matches all email addresses and phone numbers in the text</p>
+</li>
+</ol>
+<h4 id="excerise-6-boundary-matchers"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#excerise-6-boundary-matchers">Excerise 6 - Boundary Matchers</a></h4>
+<p>These questions are based on the following example string:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-76-1"><a id="__codelineno-76-1" name="__codelineno-76-1" href="#__codelineno-76-1"></a>Hello world! This is line one.
+</span><span id="__span-76-2"><a id="__codelineno-76-2" name="__codelineno-76-2" href="#__codelineno-76-2"></a>World, hello! This is line two.
+</span><span id="__span-76-3"><a id="__codelineno-76-3" name="__codelineno-76-3" href="#__codelineno-76-3"></a>HelloWorld is a single word.
+</span><span id="__span-76-4"><a id="__codelineno-76-4" name="__codelineno-76-4" href="#__codelineno-76-4"></a>The word &quot;hello&quot; appears in quotes.
+</span><span id="__span-76-5"><a id="__codelineno-76-5" name="__codelineno-76-5" href="#__codelineno-76-5"></a>This line ends with hello
+</span><span id="__span-76-6"><a id="__codelineno-76-6" name="__codelineno-76-6" href="#__codelineno-76-6"></a>hello starts this line and world ends it with world
+</span><span id="__span-76-7"><a id="__codelineno-76-7" name="__codelineno-76-7" href="#__codelineno-76-7"></a>com.example.domain is a domain name
+</span><span id="__span-76-8"><a id="__codelineno-76-8" name="__codelineno-76-8" href="#__codelineno-76-8"></a>user@example.com is an email address.
+</span><span id="__span-76-9"><a id="__codelineno-76-9" name="__codelineno-76-9" href="#__codelineno-76-9"></a>2023-05-15 is a date format.
+</span><span id="__span-76-10"><a id="__codelineno-76-10" name="__codelineno-76-10" href="#__codelineno-76-10"></a>The final line ends the entire text.
+</span></code></pre></div>
+<p><strong>Questions on ^ (Caret) Boundary</strong></p>
+<ol>
+<li>Write a regex pattern that matches any line beginning with the word "Hello".</li>
+<li>Write a regex pattern that matches any line beginning with either "Hello" or "hello".</li>
+<li>How many lines in the example string start with a capital letter?</li>
+</ol>
+<p><strong>Questions on $ (Dollar) Boundary</strong></p>
+<ol>
+<li>Write a regex pattern that matches any line ending with the word "hello".</li>
+<li>How many lines in the example string end with a period (dot)?</li>
+<li>Write a regex pattern that matches any line ending with the exact word "world".</li>
+</ol>
+<p><strong>Questions on \b (Word Boundary)</strong></p>
+<ol>
+<li>Write a regex pattern that matches the standalone word "hello" (case-insensitive) in the example text.</li>
+<li>How many times does the standalone word "world" (lowercase only) appear in the example text?</li>
+<li>Write a regex pattern that matches the word "is" only when it appears as a complete word.</li>
+</ol>
+<p><strong>Questions on \B (Non-word Boundary)</strong></p>
+<ol>
+<li>Write a regex pattern that matches "World" only when it's part of another word without word boundaries.</li>
+<li>In the example text, what word contains "World" without word boundaries on either side?</li>
+<li>Write a regex that matches "example" when it's part of a larger word or token.</li>
+</ol>
+<p><strong>Questions on \A (Start of String)</strong></p>
+<ol>
+<li>What single word would a regex pattern \AHello match in our example text?</li>
+<li>Write a regex that matches the first 5 characters of the entire example text.</li>
+<li>How does the pattern \AThe perform on our example text?</li>
+</ol>
+<p><strong>Questions on  \Z (End of String)</strong></p>
+<ol>
+<li>Write a regex pattern that matches the last sentence of the entire example text.</li>
+<li>What's the last word in the entire example text that would be matched by \w+.\Z?</li>
+<li>Write a regex that matches the last 10 characters of the entire example text.</li>
+</ol>
+<p><strong>Solution</strong></p>
+<ol>
+<li>Write a regex pattern that matches any line beginning with the word "Hello".</li>
+</ol>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-77-1"><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a>^Hello.+
+</span></code></pre></div>
+2. Write a regex pattern that matches any line beginning with either "Hello" or "hello".</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-78-1"><a id="__codelineno-78-1" name="__codelineno-78-1" href="#__codelineno-78-1"></a>^[Hh]ello.+
+</span></code></pre></div>
+3. How many lines in the example string start with a capital letter ?</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-79-1"><a id="__codelineno-79-1" name="__codelineno-79-1" href="#__codelineno-79-1"></a>^[A-Z].+
+</span></code></pre></div>
+4. Write a regex pattern that matches any line ending with the word "hello".</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-80-1"><a id="__codelineno-80-1" name="__codelineno-80-1" href="#__codelineno-80-1"></a>.+hello$
+</span></code></pre></div>
+5. How many lines in the example string end with a period (dot)?</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-81-1"><a id="__codelineno-81-1" name="__codelineno-81-1" href="#__codelineno-81-1"></a>.+\.$
+</span></code></pre></div>
+6. Write a regex pattern that matches any line ending with the exact word "world".</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-82-1"><a id="__codelineno-82-1" name="__codelineno-82-1" href="#__codelineno-82-1"></a>.+\bworld\b$
+</span></code></pre></div>
+7. Write a regex pattern that matches the standalone word "hello" (case-insensitive) in the example text.</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-83-1"><a id="__codelineno-83-1" name="__codelineno-83-1" href="#__codelineno-83-1"></a>\b[Hh]ello\b
+</span></code></pre></div>
+8. How many times does the standalone word "world" (lowercase only) appear in the example text?</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-84-1"><a id="__codelineno-84-1" name="__codelineno-84-1" href="#__codelineno-84-1"></a>\bworld\b
+</span></code></pre></div>
+9. Write a regex pattern that matches the word "is" only when it appears as a complete word.</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-85-1"><a id="__codelineno-85-1" name="__codelineno-85-1" href="#__codelineno-85-1"></a>\bis\b
+</span></code></pre></div>
+10. Write a regex pattern that matches "World" only when it's part of another word without word boundaries.</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-86-1"><a id="__codelineno-86-1" name="__codelineno-86-1" href="#__codelineno-86-1"></a>\BWorld\B\
+</span></code></pre></div>
+11. In the example text, what word contains "World" without word boundaries on either side?</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-87-1"><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a>\w+.+\BWorld\B\w+.+
+</span></code></pre></div>
+<ol>
+<li>Write a regex that matches "example" when it's part of a larger word or token.</li>
+</ol>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-88-1"><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a>\Bexample\B
+</span></code></pre></div>
+13.  What single word would a regex pattern \AHello match in our example text?</p>
+<p>It matches word Hello in entire string</p>
+<ol>
+<li>Write a regex that matches the first 5 characters of the entire example text.</li>
+</ol>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-89-1"><a id="__codelineno-89-1" name="__codelineno-89-1" href="#__codelineno-89-1"></a>\A.{5}
+</span></code></pre></div>
+15.  How does the pattern \AThe perform on our example text?</p>
+<p>No pattern is identified</p>
+<p>16.Write a regex pattern that matches the last sentence of the entire example text.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-90-1"><a id="__codelineno-90-1" name="__codelineno-90-1" href="#__codelineno-90-1"></a>.+\Z
+</span></code></pre></div>
+<p>17.What's the last word in the entire example text that would be matched by \w+.\Z?</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-91-1"><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a>text.
+</span></code></pre></div>
+<p>18.Write a regex that matches the last 10 characters of the entire example text.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-92-1"><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a>.{10}\Z
+</span></code></pre></div>
+<h3 id="warning"><a class="toclink" href="../../2025/04/13/introduction-to-regular-expressions/#warning">Warning</a></h3>
+<p>The dot (.) is a very powerful metacharacter that can create problems if not used properly, as it matches almost any character.</p>
+<hr />
+<p><em>Source: Data Science Anywhere</em></p>
+<ul>
+<li>YouTube: https://www.youtube.com/@datascienceanywhere/</li>
+<li>Udemy: https://www.udemy.com/user/freeai-space/</li>
+<li>GitHub: https://github.com/marslearnings</li>
+</ul>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-03-16 00:00:00+00:00">March 16, 2025</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Python</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              10 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="python-print"><a class="toclink" href="../../2025/03/16/python-print/">Python print()</a></h2>
+<p>Python's <code>print()</code> function is one of the first commands most beginners learn, yet it offers surprising depth and versatility. This guide explores the various capabilities of the <code>print()</code> function that can enhance your code's output formatting and readability.</p>
+<h3 id="basic-print-usage"><a class="toclink" href="../../2025/03/16/python-print/#basic-print-usage">Basic Print Usage</a></h3>
+<p>The simplest use of the <code>print()</code> function is to display text or values:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world&quot;</span><span class="p">)</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="c1"># Output: Hello, world</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="c1"># Output: 2</span>
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="c1"># Output: 5</span>
+</span></code></pre></div>
+<p>You can combine text and expressions using commas:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2+3 =&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="c1"># Output: 2+3 = 5</span>
+</span></code></pre></div>
+<h3 id="customizing-output-with-parameters"><a class="toclink" href="../../2025/03/16/python-print/#customizing-output-with-parameters">Customizing Output with Parameters</a></h3>
+<h4 id="the-sep-parameter"><a class="toclink" href="../../2025/03/16/python-print/#the-sep-parameter">The <code>sep</code> Parameter</a></h4>
+<p>By default, <code>print()</code> separates multiple arguments with spaces. You can customize this separator using the <code>sep</code> parameter:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># Default separator (space)</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">)</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="c1"># Output: a b c d</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="c1"># Empty separator</span>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="c1"># Output: abcd</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="c1"># Hyphen separator</span>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="c1"># Output: a-b-c-d</span>
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="c1"># Custom word separator</span>
+</span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;data&#39;</span><span class="p">)</span>
+</span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a><span class="c1"># Output: adatabdatacdatad</span>
+</span></code></pre></div>
+<h4 id="the-end-parameter"><a class="toclink" href="../../2025/03/16/python-print/#the-end-parameter">The <code>end</code> Parameter</a></h4>
+<p>By default, <code>print()</code> adds a newline character at the end of output. You can change this behavior with the <code>end</code> parameter:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hi, how are you&#39;</span><span class="p">)</span>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="c1"># Output: a b c d Hello world Hi, how are you</span>
+</span></code></pre></div>
+<h4 id="combining-sep-and-end"><a class="toclink" href="../../2025/03/16/python-print/#combining-sep-and-end">Combining <code>sep</code> and <code>end</code></a></h4>
+<p>These parameters can be used together for powerful formatting:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hi, how are you&#39;</span><span class="p">)</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="c1"># Output: </span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="c1"># a</span>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="c1"># b</span>
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="c1"># c</span>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="c1"># d Hello world Hi, how are you</span>
+</span></code></pre></div>
+<h3 id="escape-sequence-characters"><a class="toclink" href="../../2025/03/16/python-print/#escape-sequence-characters">Escape Sequence Characters</a></h3>
+<p>Python's print function supports various escape sequences for special formatting:</p>
+<table>
+<thead>
+<tr>
+<th>Escape Sequence</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\n</code></td>
+<td>Newline</td>
+</tr>
+<tr>
+<td><code>\t</code></td>
+<td>Horizontal tab</td>
+</tr>
+<tr>
+<td><code>\\</code></td>
+<td>Backslash</td>
+</tr>
+<tr>
+<td><code>\'</code></td>
+<td>Single quote</td>
+</tr>
+<tr>
+<td><code>\"</code></td>
+<td>Double quote</td>
+</tr>
+<tr>
+<td><code>\r</code></td>
+<td>Carriage return</td>
+</tr>
+<tr>
+<td><code>\b</code></td>
+<td>Backspace</td>
+</tr>
+</tbody>
+</table>
+<h4 id="newline-example"><a class="toclink" href="../../2025/03/16/python-print/#newline-example">Newline Example</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\n</span><span class="s2">world&quot;</span><span class="p">)</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="c1"># Output:</span>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="c1"># Hello</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="c1"># world</span>
+</span></code></pre></div>
+<h4 id="tab-example"><a class="toclink" href="../../2025/03/16/python-print/#tab-example">Tab Example</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\t\t\t</span><span class="s2">world&quot;</span><span class="p">)</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="c1"># Output: Hello         world</span>
+</span></code></pre></div>
+<h4 id="escaping-special-characters"><a class="toclink" href="../../2025/03/16/python-print/#escaping-special-characters">Escaping Special Characters</a></h4>
+<p>To print literal escape sequences, use the backslash as an escape character:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">n&#39;</span><span class="p">)</span>  <span class="c1"># Escapes the sequence</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="c1"># Output: \n</span>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;c:</span><span class="se">\\</span><span class="s2">notebook</span><span class="se">\\</span><span class="s2">tables&quot;</span><span class="p">)</span>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="c1"># Output: c:\notebook\tables</span>
+</span></code></pre></div>
+<h4 id="quote-characters"><a class="toclink" href="../../2025/03/16/python-print/#quote-characters">Quote Characters</a></h4>
+<p>You can use different quotation marks strategically:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a beautiful day. But it&#39;s raining today&quot;</span><span class="p">)</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="c1"># Output: It is a beautiful day. But it&#39;s raining today</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;He said, &quot;Hi&quot;&#39;</span><span class="p">)</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="c1"># Output: He said, &quot;Hi&quot;</span>
+</span></code></pre></div>
+<p>Or escape quotes when needed:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;It is a beautiful day. But it</span><span class="se">\&#39;</span><span class="s1">s raining today&#39;</span><span class="p">)</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="c1"># Output: It is a beautiful day. But it&#39;s raining today</span>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;He said, </span><span class="se">\&quot;</span><span class="s2">Hi</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a><span class="c1"># Output: He said, &quot;Hi&quot;</span>
+</span></code></pre></div>
+<h4 id="carriage-return"><a class="toclink" href="../../2025/03/16/python-print/#carriage-return">Carriage Return</a></h4>
+<p>The <code>\r</code> escape sequence returns to the beginning of the line and overwrites characters:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;123456</span><span class="se">\r</span><span class="s1">hello world&#39;</span><span class="p">)</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="c1"># Output: hello world</span>
+</span></code></pre></div>
+<h4 id="backspace"><a class="toclink" href="../../2025/03/16/python-print/#backspace">Backspace</a></h4>
+<p>The <code>\b</code> escape sequence removes the character before it:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello</span><span class="se">\b</span><span class="s1">world&#39;</span><span class="p">)</span>
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="c1"># Output: hellworld</span>
+</span></code></pre></div>
+<h3 id="saving-output-to-files"><a class="toclink" href="../../2025/03/16/python-print/#saving-output-to-files">Saving Output to Files</a></h3>
+<p>The <code>print()</code> function can send output directly to files:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;print_file.txt&quot;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>  <span class="c1"># &#39;w&#39; for write, &#39;a&#39; for append</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">f</span><span class="p">)</span>
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># Always close files after use</span>
+</span></code></pre></div>
+<h3 id="best-practices"><a class="toclink" href="../../2025/03/16/python-print/#best-practices">Best Practices</a></h3>
+<ol>
+<li>Use appropriate quote types (<code>'</code> or <code>"</code>) to minimize escaping</li>
+<li>Close file handles after printing to files</li>
+<li>Consider readability when combining multiple print parameters</li>
+<li>Use f-strings for complex string formatting in modern Python</li>
+</ol>
+<h3 id="summary"><a class="toclink" href="../../2025/03/16/python-print/#summary">Summary</a></h3>
+<p>The <code>print()</code> function is much more than a simple output tool. With its various parameters and support for escape sequences, you can create well-formatted, readable output for debugging, user interaction, or data presentation.</p>
+<p>By mastering these features, you'll be able to communicate more effectively through your Python programs, whether you're creating simple scripts or complex applications.</p>
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Blog">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Blog
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../archive/2025/" class="md-footer__link md-footer__link--next" aria-label="Next: April 2025">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                April 2025
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      copyright &copy; 2025 MARS Learnings
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/@datascienceanywhere" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.498 6.186a3.02 3.02 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.02 3.02 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.02 3.02 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.02 3.02 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814M9.545 15.568V8.432L15.818 12z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.footer", "navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tabs.sticky", "navigation.sections"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
